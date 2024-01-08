@@ -1,0 +1,45 @@
+/* Write your CSS here */
+.maoney_details_contianer {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.same {
+  width: 270px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 105px;
+  padding: 5px 20px;
+}
+.balance {
+  border: 2px solid #84cc16;
+  background-color: #ecfccb;
+}
+.income {
+  border: 2px solid #06b6d4;
+  background-color: #cffafe;
+}
+.expenses {
+  border: 2px solid #7c3aed;
+  background-color: #ede9fe;
+}
+.same_logo {
+  height: 70px;
+  width: 70px;
+}
+.money_shown {
+  height: 100px;
+}
+.your {
+  font: normal normal 20px 'Roboto';
+  color: #334155;
+  margin: 13px 0px;
+}
+.left {
+  font: normal normal 30px 'Roboto';
+  color: #334155;
+  margin-top: 1px;
+}

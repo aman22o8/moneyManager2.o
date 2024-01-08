@@ -1,0 +1,21 @@
+/* Write your CSS here */
+.result_container_list {
+  display: flex;
+  border: 1px solid #7e858e;
+  padding-left: 15px;
+  width: 310px;
+}
+.result_heading_list {
+  font: normal normal 12px 'Roboto';
+  color: #475569;
+  width: 82px;
+}
+.delete_btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.delete_icon {
+  height: 15px;
+  width: 15px;
+}
