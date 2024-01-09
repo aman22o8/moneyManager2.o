@@ -37,7 +37,12 @@ class MoneyManager extends Component {
   }
 
   addingToArray = () => {
-    const {initialBalance, initialOption, initialTitle, myArray} = this.state
+    const {
+      initialBalance,
+      initialOption,
+      initialTitle,
+      //  myArray
+    } = this.state
     const displayTest = transactionTypeOptions.find(
       each => each.optionId === initialOption,
     )
@@ -47,14 +52,20 @@ class MoneyManager extends Component {
       amount: initialBalance,
       type: displayTest.displayText,
     }
-    const newArray = [...myArray, newItem]
+    // const newArray = [...myArray, newItem]
     // {...myObject,newItem}
-    this.setState({
-      myArray: newArray,
+    this.setState(prevState => ({
+      myArray: [...prevState.myArray, newItem],
       initialBalance: '',
       initialOption: transactionTypeOptions[0].optionId,
       initialTitle: '',
-    })
+    }))
+    // this.setState({
+    //   myArray: newArray,
+    //   initialBalance: '',
+    //   initialOption: transactionTypeOptions[0].optionId,
+    //   initialTitle: '',
+    // })
   }
 
   handleDelete = unique => {
